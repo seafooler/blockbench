@@ -1,5 +1,8 @@
 # BlockBench
 
+**This is a forked version of [Blockbench](https://github.com/ooibc88/blockbench) by seafooler.
+I just make some modifications to the original source codes, so as to run the system on my Linux OS successfully.**
+
 BlockBench is the first benchmarking framework for private blockchain systems.
 It serves as a fair means of comparison for different platforms and enables deeper understanding
 of different system design choices.
