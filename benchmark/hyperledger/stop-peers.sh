@@ -3,6 +3,8 @@
 cd `dirname ${BASH_SOURCE-$0}`
 . env.sh
 
+source /etc/profile
+
 for peer in `cat $HOSTS`; do
   ssh $peer killall -KILL peer java driver
 done

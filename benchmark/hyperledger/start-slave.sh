@@ -4,6 +4,8 @@
 cd `dirname ${BASH_SOURCE-$0}`
 . env.sh
 
+source /etc/profile
+
 export CORE_PEER_ID=vp$2
 export CORE_PEER_DISCOVERY_ROOTNODE=$1:7051
 export CORE_PEER_ADDRESSAUTODETECT=true

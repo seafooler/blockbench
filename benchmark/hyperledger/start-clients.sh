@@ -3,6 +3,8 @@
 cd `dirname ${BASH_SOURCE-$0}`
 . env.sh
 
+source /etc/profile
+
 echo IN START_CLIENTS $1 $2 $3 $4
 LOG_DIR=$LOG_DIR/hl_exp_$3"_"servers_$1"_"threads_$4"_"rates
 mkdir -p $LOG_DIR

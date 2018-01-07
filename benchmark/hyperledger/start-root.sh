@@ -3,6 +3,8 @@
 cd `dirname ${BASH_SOURCE-$0}`
 . env.sh
 
+source /etc/profile
+
 export CORE_PEER_ID=vp0
 export CORE_PEER_ADDRESSAUTODETECT=true
 export CORE_PEER_NETWORKID=dev2
@@ -10,6 +12,7 @@ export CORE_PEER_VALIDATOR_CONSENSUS_PLUGIN=pbft
 export CORE_PEER_FILE_SYSTEM_PATH=$HL_DATA/hyperledger
 export CORE_VM_ENDPOINT=http://localhost:2375
 export CORE_PBFT_GENERAL_MODE=batch
+export PEER_CFG_PATH=$HL_SOURCE/peer/
 
 rm -rf $CORE_PEER_FILE_SYSTEM_PATH
 mkdir -p $CORE_PEER_FILE_SYSTEM_PATH

@@ -3,6 +3,9 @@
 cd `dirname ${BASH_SOURCE-$0}`
 . env.sh
 
+source /etc/profile
+
+
 let i=0
 let K=$1/2
 for client in `cat $CLIENTS`; do

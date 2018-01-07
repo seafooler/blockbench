@@ -2,6 +2,9 @@
 #host num_nodes threads
 HOSTS=$1
 
+source /etc/profile
+
+
 let i=0
 #let K=$2/2
 let K=4

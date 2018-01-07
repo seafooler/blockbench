@@ -3,6 +3,8 @@
 cd `dirname ${BASH_SOURCE-$0}`
 . env.sh
 
+source /etc/profile
+
 CONFIG=hl_consensus_$1".yaml"
 for peer in `cat $HOSTS`; do
   scp $CONFIG $peer:$HL_SOURCE/consensus/pbft/config.yaml  
